@@ -1,0 +1,45 @@
+
+.homeGrid .chingching h1 {
+	position: relative;
+    display: block;
+}
+
+
+.homeGrid .chingching #ching1 #type1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+    background: #fff;
+	width: 100%;
+	border-left: .1em solid transparent;
+	animation: typing 3.5s steps(20) forwards, cursor 2.5s forwards;
+}
+
+.homeGrid .chingching #ching2 #type2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+    background: #fff;
+	width: 100%;
+	border-left: .1em solid transparent;
+	animation: typing 3.5s steps(20) forwards, cursor 4.2s forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes typing{
+	0%{ width: 100%;}
+	100%{ width: 0;}
+}
+@keyframes cursor{
+	50% { border-color: gold;}
+}
+
+.line{
+  stroke-dasharray: 221;
+  stroke-dashoffset: -221;
+  animation:draw 2s infinite;
+  transform-origin:50% 50%;
+}
+
+
+
